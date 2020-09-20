@@ -1,38 +1,74 @@
-.App {
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #e4fde1;
+  font-family: "Sofia";
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
   display: flex;
+  background-color: #114b5f;
+  text-align: center;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-top: 2%;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: space-evenly;
+  font-family: "Audiowide";
+  color: #e4fde1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.tiles {
+  background: #456990;
+  width: 30%;
+  height: 150px;
+  border: 1px solid #028090;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 3rem;
+}
+
+.empty {
+  background: #dad4ef;
+  border: 2px solid #114b5f;
+}
+
+@media (min-width: 320px) {
+  .container {
+    width: 95%;
+    height: 500px;
+    background: #e4fde1;
+    margin: 40px auto;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media (min-width: 481px) {
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+}
+@media (min-width: 641px) {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+}
+@media (min-width: 961px) {
+  .container {
+    width: 500px;
+    height: 500px;
+    background: #e4fde1;
+    margin: 10px auto;
   }
+}
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+}
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
 }
